@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8"/>
+<title>Evaluate Method Functionality Demo</title>
+<script src="closure-library/closure/goog/base.js"></script>
+<script>
+  goog.require('goog.proto2.Message');
+</script>
+<script src="libphonenumber/javascript/i18n/phonenumbers/phonemetadata.pb.js"></script>
+<script src="libphonenumber/javascript/i18n/phonenumbers/phonenumber.pb.js"></script>
+<script src="libphonenumber/javascript/i18n/phonenumbers/metadata.js"></script>
+<script src="libphonenumber/javascript/i18n/phonenumbers/phonenumberutil.js"></script>
+<script src="libphonenumber/javascript/i18n/phonenumbers/asyoutypeformatter.js"></script>
+<script src="demo.js"></script>
+<script src="node_modules/optimizely-client-sdk/dist/optimizely.min.js"></script>
+</head>
+<body>
+
+<h2 id="headline">Form Validation (Evaluate Functionality)</h2>
+
+<p id="success" style="width: 60px; display: none; background-color: lightgreen;">Success!</p>
+<p id="failure" style="width: 60px; display: none; background-color: orangered;">Failure!</p>
+
+<form id="evaluatemethod">
+  <div id="formfield">
+  <label for="phoneNumber">
+  Specify a Phone Number (starting with a +, e.g +49):
+  </label>
+  <input type="text" name="phoneNumber" id="phoneNumber" size="25" />
+  </div>
+  <p>
+  <input type="submit" value="Absenden" />
+  <input type="reset" value="Zurücksetzen" />
+  </p>
+</form>
+
+<script>
+  var id = new Date().getTime().toString();
+  var instance = createInstance();
+  generateForm(id, instance);
+  var form = document.getElementById('evaluatemethod');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    validateForm(id, instance);
+    form.submit();
+  });
+</script>
+
+</body>
+</html>
