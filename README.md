@@ -27,7 +27,7 @@ The evaluation of the developed ab testing method from the bachelor thesis "Desi
 
 # How to use
 
-Ideally use Google's Chrome Browser and open the integrated developer tools to get access to cookies and the console.
+Ideally use Google's Chrome Browser and open the integrated developer tools to get access to cookies and disable the cache! If you do not disable the cache, cookies may not be reset and the functionality in all cases can not be demonstrated.
 
 1. To run the Optimizely demo, open `evaluate-abtestmethod/demo.html`, type a valid value into the form field and submit the form. Very soon you will run into errors as there are no dependencies defined.
 1. To run the own systems demo, open `evaluate-abtestmethod/demo_system.html`, type a valid value into the form field and submit the form. There are dependencies defined, so you will always get a success message (if you provide a valid input). To reset the current variant, delete all cookies. The relevant cookies start with `ISEAB...`
