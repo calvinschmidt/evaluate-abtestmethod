@@ -19,18 +19,18 @@ The evaluation of the developed ab testing method from the bachelor thesis "Desi
 * `git clone https://github.com/google/python-gflags.git`
 
 2. Run the unit tests to make sure everything is working. Open the following pages with your web browser:
-  `javascript/i18n/phonenumbers/phonenumberutil_test.html`
-  `javascript/i18n/phonenumbers/asyoutypeformatter_test.html`
+  `libphonenumber/javascript/i18n/phonenumbers/phonenumberutil_test.html`
+  `libphonenumber/javascript/i18n/phonenumbers/asyoutypeformatter_test.html`
 
-3. Run the Optimizely demo: `demo.html`
-4. Run the systems demo: `demo_system.html`
+3. Run the Optimizely demo: `evaluate-abtestmethod/demo.html`
+4. Run the systems demo: `evaluate-abtestmethod/demo_system.html`
 
 # How to use
 
 Ideally use Google's Chrome Browser and open the integrated developer tools to get access to cookies and the console.
 
-1. To run the Optimizely demo, open `demo.html`, type a valid value into the form field and submit the form. Very soon you will run into errors as there are no dependencies defined.
-1. To run the own systems demo, open `demo_system.html`, type a valid value into the form field and submit the form. There are dependencies defined, so you will always get a success message (if you provide a valid input). To reset the current variant, delete all cookies. The relevant cookies start with `ISEAB...`
+1. To run the Optimizely demo, open `evaluate-abtestmethod/demo.html`, type a valid value into the form field and submit the form. Very soon you will run into errors as there are no dependencies defined.
+1. To run the own systems demo, open `evaluate-abtestmethod/demo_system.html`, type a valid value into the form field and submit the form. There are dependencies defined, so you will always get a success message (if you provide a valid input). To reset the current variant, delete all cookies. The relevant cookies start with `ISEAB...`
 
 # How to provide valid inputs
 
